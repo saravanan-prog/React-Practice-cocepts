@@ -8,11 +8,16 @@ import { ListManagement } from './react-function-compoent-learning/ListManagemen
 import { EmployeeForm } from './react-function-compoent-learning/EmployeeForm'
 import { CounterProgram } from './react-class-component-basics/SimpleUpdateState'
 import { EmployeeClassState } from './react-class-component-basics/EmployeeClassState'
+import { ComponentA } from './react-simple-props-learning/ComponentA'
+import { ComponentB } from './react-simple-props-learning/ComponentB'
+import { ParentComponent } from './react-callback-learning/ParentComponent'
+import { EmployeeListIndex } from './EmployeeList/EmployeeListIndex'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <EmployeeClassState />
+    <EmployeeListIndex />
+    {/* <ComponentB /> */}
   </StrictMode>
 )
