@@ -24,7 +24,11 @@ export function AddEmployee({ addRecord }) {
         <form onSubmit={handleSubmit}>
           <div className="row">
             <label> Employee ID</label>
-            <input type="text" name="empid" onChange={handleChange} />
+            <input 
+                type="text" 
+                name="empid" 
+                onChange={handleChange} 
+            />
           </div>
           <div className="row">
             <label> Employee Name</label>

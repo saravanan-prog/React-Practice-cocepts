@@ -29,32 +29,16 @@ export function TableViewList({ list, handleUpdate, handleDelete }) {
                   <tr>
                     <td>{index + 1}</td>
                     <td>
-                      {!updateFlag ? (
-                        empid
-                      ) : (
-                        <input type="text" value={empid} name="empid"  />
-                      )}
+                      {empid}
                     </td>
                     <td>
-                      {!updateFlag ? (
-                        emp_name
-                      ) : (
-                        <input type="text" value={emp_name} name="emp_name" />
-                      )}
+                      {emp_name}
                     </td>
                     <td>
-                      {!updateFlag ? (
-                        designation
-                      ) : (
-                        <input type="text" value={designation} name="designation" />
-                      )}
+                      {designation}
                     </td>
                     <td>
-                      {!updateFlag ? (
-                        workLocation
-                      ) : (
-                        <input type="text" value={workLocation} name="workLocation" />
-                      )}
+                      {workLocation}
                     </td>
                     <td>
                       <ListAction

@@ -10,14 +10,18 @@ import { CounterProgram } from './react-class-component-basics/SimpleUpdateState
 import { EmployeeClassState } from './react-class-component-basics/EmployeeClassState'
 import { ComponentA } from './react-simple-props-learning/ComponentA'
 import { ComponentB } from './react-simple-props-learning/ComponentB'
-import { ParentComponent } from './react-callback-learning/ParentComponent'
 import { EmployeeListIndex } from './EmployeeList/EmployeeListIndex'
+import { ParentComponent } from './react-callback-learning-2/ParentComponent'
+import { ParentclassComp } from './react-class-comp-props-callback/ParentclassComp'
+import { HomeScreen } from './react-css-implementation/HomeScreen'
+import { AboutScreen } from './react-css-implementation/AboutScreen'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <EmployeeListIndex />
+    <HomeScreen />
     {/* <ComponentB /> */}
   </StrictMode>
 )
