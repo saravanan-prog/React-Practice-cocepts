@@ -10,7 +10,7 @@ export function TableViewList({ list, handleUpdate, handleDelete }) {
 
   return (
     <div>
-      <table border={2}>
+      <table border={2} className="table table-stripped m-3">
         <thead>
           <th> Serial </th>
           <th> Employee Id </th>

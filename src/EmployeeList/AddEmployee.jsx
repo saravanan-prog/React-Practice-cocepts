@@ -20,30 +20,31 @@ export function AddEmployee({ addRecord }) {
       <div className="heading">
         <h1> Employee Form </h1>
       </div>
-      <div className="form">
+      <div className="form container" >
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <label> Employee ID</label>
+            <label className="form-label"> Employee ID</label>
             <input 
                 type="text" 
                 name="empid" 
                 onChange={handleChange} 
+                className="form-input"
             />
           </div>
           <div className="row">
-            <label> Employee Name</label>
+            <label  className="form-label"> Employee Name</label>
             <input type="text" name="emp_name" onChange={handleChange} />
           </div>
           <div className="row">
-            <label> Employee Designation</label>
+            <label  className="form-label"> Employee Designation</label>
             <input type="text" name="designation" onChange={handleChange} />
           </div>
           <div className="row">
-            <label> Employee Location</label>
+            <label  className="form-label"> Employee Location</label>
             <input type="text" name="workLocation" onChange={handleChange} />
           </div>
           <div className="row">
-            <input type="submit" value="ADD Records" />
+            <input type="submit" value="ADD Records" className="btn btn-primary" />
           </div>
         </form>
       </div>

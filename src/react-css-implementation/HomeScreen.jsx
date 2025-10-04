@@ -22,7 +22,6 @@ export function HomeScreen() {
     <div>
 
         <div className="Inline-css-example">
-            {/*Inline - CSS */}
             <h1
                 style={{
                     backgroundColor: "red",

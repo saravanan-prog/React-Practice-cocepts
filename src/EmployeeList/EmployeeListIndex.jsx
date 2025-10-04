@@ -60,6 +60,7 @@ export function EmployeeListIndex() {
           list={list}
           handleUpdate={handleUpdate}
           handleDelete={handleDelete}
+          
         />
       </div>
       <div className="add-Records">
