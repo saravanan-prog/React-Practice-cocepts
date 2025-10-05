@@ -1,21 +1,33 @@
-import { Fragment, useState } from "react";
-import EmployeeList from "../assets/data/employeeList.json";
+import { Fragment, useState, useEffect } from "react";
 import { AddEmployee } from "./AddEmployee";
 import { ListAction } from "./ListAction";
 import { SearchEmployee } from "./SearchEmployee";
 import { TableViewList } from "./TableViewList";
 
 export function EmployeeListIndex() {
-  const [list, setList] = useState(EmployeeList);
+  const [list, setList] = useState();
   const [searchText, setSearchText] = useState(null);
+
+  useEffect(() => {
+    getApicall();
+  }, []);
+
+  const getApicall = async () => {
+    let url = `http://localhost:5173/employeeList1.json`;
+    let response = await fetch(url);
+    let responseData = await response.json();
+    if (response && responseData) {
+      setList(responseData);
+    }
+  };
 
   const handleUpdate = (profileIndex) => {
     const updatedList = list.map((value, index) => {
       if (profileIndex == index) {
         (value.empid = 5555),
-        (value.emp_name = "jayaRaj"),
-        (value.designation = "Super Manager"),
-        (value.workLocation = "Mumbai");
+          (value.emp_name = "jayaRaj"),
+          (value.designation = "Super Manager"),
+          (value.workLocation = "Mumbai");
       }
 
       return value;
@@ -60,7 +72,6 @@ export function EmployeeListIndex() {
           list={list}
           handleUpdate={handleUpdate}
           handleDelete={handleDelete}
-          
         />
       </div>
       <div className="add-Records">

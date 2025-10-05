@@ -18,12 +18,14 @@ import { AboutScreen } from './react-css-implementation/AboutScreen'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { LifecycleExampleClass } from './react-life-cycle/LifecycleExampleClass'
 import { FcLifecycleExample } from './react-life-cycle/FcLifecycleExample'
+import { FetchApiLearningGet } from './react-api-Learning/FetchApiLearningGet'
+import { CreateUser } from './react-api-Learning/CreateUser'
 
 
 
 createRoot(document.getElementById('root')).render(
   <div>
-    <EmployeeListIndex />
+    <CreateUser />
     {/* <ComponentB /> */}
   </div>
 )
