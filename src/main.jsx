@@ -20,12 +20,14 @@ import { LifecycleExampleClass } from './react-life-cycle/LifecycleExampleClass'
 import { FcLifecycleExample } from './react-life-cycle/FcLifecycleExample'
 import { FetchApiLearningGet } from './react-api-Learning/FetchApiLearningGet'
 import { CreateUser } from './react-api-Learning/CreateUser'
+import { ProductListing } from './react-axios-api-handling/ProductListing'
+import { CreateUserAxios } from './react-axios-api-handling/CreateUserAxios'
 
 
 
 createRoot(document.getElementById('root')).render(
   <div>
-    <CreateUser />
+    <CreateUserAxios />
     {/* <ComponentB /> */}
   </div>
 )
