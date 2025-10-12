@@ -21,13 +21,15 @@ import { FcLifecycleExample } from './react-life-cycle/FcLifecycleExample'
 import { FetchApiLearningGet } from './react-api-Learning/FetchApiLearningGet'
 import { CreateUser } from './react-api-Learning/CreateUser'
 import { ProductListing } from './react-axios-api-handling/ProductListing'
-import { CreateUserAxios } from './react-axios-api-handling/CreateUserAxios'
-
+import { CreateUserForm } from './react-axios-api-handling/CreateUserForm'
+import { ParentComponent as PropsDrilling} from './react-props-drilling/ParentComponent'
+import { SimpleCounterIndex } from './reacthook-useReducer/SimpleCounterIndex'
+import { StudentList } from './react-useReducer-employeelist/StudentList'
 
 
 createRoot(document.getElementById('root')).render(
   <div>
-    <CreateUserAxios />
+    <StudentList />
     {/* <ComponentB /> */}
   </div>
 )

@@ -1,0 +1,26 @@
+[
+    {
+        "fieldLabel":"Candidate Name",
+        "fieldType":"text",
+        "fieldName":"candidateName",
+        "fieldLabelClassName":"form-label",
+        "fieldInputClassName":"form-input",
+        "fieldID":"canidate-name"
+
+    },
+    {
+        "fieldLabel":"Candidate JOB",
+        "fieldType":"text",
+        "fieldName":"candidateJob",
+        "fieldLabelClassName":"form-label",
+        "fieldInputClassName":"form-input",
+        "fieldID":"canidate-job"
+    },
+    {
+        "fieldLabel":"",
+        "fieldType":"submit",
+        "fieldName":"submit",
+        "fieldLabelClassName":"form-label",
+        "fieldInputClassName":"btn btn-primary"
+    }
+]
