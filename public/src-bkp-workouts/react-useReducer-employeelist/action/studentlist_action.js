@@ -12,9 +12,10 @@ export const reducerAction = (state,action) => {
             })
 
         case "delete":
-            return state.filter((value,index) => {
-                return index !== action.id
+            var record =  state.filter((value,index) => {
+                return index != action.id
             })
+            return record
 
         default:
             return state

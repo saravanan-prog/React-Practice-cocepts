@@ -16,6 +16,14 @@
         "fieldInputClassName":"form-input",
         "fieldID":"canidate-job"
     },
+     {
+        "fieldLabel":"Candidate JOB category",
+        "fieldType":"text",
+        "fieldName":"candidateJobcategory",
+        "fieldLabelClassName":"form-label",
+        "fieldInputClassName":"form-input",
+        "fieldID":"canidate-job-category"
+    },
     {
         "fieldLabel":"",
         "fieldType":"submit",

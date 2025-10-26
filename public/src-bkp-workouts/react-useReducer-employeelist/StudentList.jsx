@@ -19,8 +19,8 @@ export function StudentList() {
             </tr>
           </thead>
           <tbody>
-            {studentList && studentList.length != 0 ? (
-              studentList.map((value, index) => {
+            {student && student.length != 0 ? (
+              student.map((value, index) => {
                 const { studentID, studentName } = value;
                 return (
                   <Fragment key={index}>
