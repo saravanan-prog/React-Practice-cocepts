@@ -5,7 +5,7 @@ import { BlogPage } from "../Pages/blogs/BlogPage";
 import { ContactPage } from "../Pages/contact/ContactPage";
 import { NoPagefound } from "../core/components/NoPagefound/NoPagefound";
 import { ProductListing } from "../Pages/productListing/ProductListing";
-import { ViewProduct } from "../Pages/productListing/viewProduct/ViewProrduct";
+import { ViewProduct } from "../Pages/viewProduct/ViewProrduct";
 
 export function RouterOutlet() {
   return (
@@ -64,10 +64,10 @@ export function RouterOutlet() {
                 element = {<ViewProduct />}
             />
 
-             <Route 
+             {/* <Route 
                 path="viewProduct/:id/:name"
                 element = {<ViewProduct />}
-            />
+            /> */}
 
 
 
