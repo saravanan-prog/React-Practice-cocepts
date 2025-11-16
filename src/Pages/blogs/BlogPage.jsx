@@ -1,4 +1,4 @@
-export function BlogPage(){
+export default function BlogPage(){
 
 
     return <div>

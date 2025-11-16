@@ -2,7 +2,7 @@ import { useState,useEffect,Fragment } from "react";
 import { getallProdcuts } from "./actions/prodcutlist_action";
 import { ProductShow } from "./components/ProductsShow";
 
-export function ProductListing(){
+export default function ProductListing(){
 
      const [products, setProducts] = useState();
       

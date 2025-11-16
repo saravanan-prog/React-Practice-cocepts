@@ -2,7 +2,7 @@ import { useParams,useLocation } from "react-router-dom"
 import {useState,useEffect} from 'react'
 
 
-export function ViewProduct(){
+export default function ViewProduct(){
 
      const [productData,setProductData] = useState()
      

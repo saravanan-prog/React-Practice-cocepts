@@ -1,4 +1,4 @@
-export function NoPagefound(){
+export default function NoPagefound(){
 
 
     return  <div>
